@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RepeatIcon">
+
+        <attr name="repeatMode" format="integer"/>
+
+    </declare-styleable>
+</resources>

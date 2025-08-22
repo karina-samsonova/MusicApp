@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trackRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <com.example.design_system.AnimatedBubbles
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:areWhite="false" />
+
+    <TextView
+        android:id="@+id/fullPlayerAlbumName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="44dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/fullPlayerBtnDownload"
+        app:layout_constraintEnd_toStartOf="@id/fullPlayerBtnDownload"
+        app:layout_constraintTop_toTopOf="@id/fullPlayerBtnDownload"
+        tools:text="Альбом" />
+
+    <ImageView
+        android:id="@+id/fullPlayerBtnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="?actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/download"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/textPrimary" />
+
+    <ImageView
+        android:id="@+id/fullPlayerCover"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullPlayerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/fullPlayerCover"
+        tools:text="Остров" />
+
+    <TextView
+        android:id="@+id/fullPlayerArtistName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="80dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/fullPlayerName"
+        tools:text="Леонид Агутин" />
+
+    <SeekBar
+        android:id="@+id/fullPlayerSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:theme="@style/SeekBarColor"
+        app:layout_constraintTop_toBottomOf="@id/fullPlayerArtistName" />
+
+    <com.example.design_system.FavorIcon
+        android:id="@+id/fullPlayerBtnFavor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/fullPlayerArtistName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fullPlayerName" />
+
+    <com.example.design_system.ShuffleIcon
+        android:id="@+id/fullPlayerBtnShuffle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/shuffle"
+        app:layout_constraintBottom_toBottomOf="@id/fullPlayerBtnPlay"
+        app:layout_constraintEnd_toStartOf="@id/fullPlayerBtnPrevious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fullPlayerBtnPlay"
+        app:tint="@color/textPrimary" />
+
+    <ImageView
+        android:id="@+id/fullPlayerBtnPrevious"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/skip_previous"
+        app:layout_constraintBottom_toBottomOf="@id/fullPlayerBtnPlay"
+        app:layout_constraintEnd_toStartOf="@id/fullPlayerBtnPlay"
+        app:layout_constraintStart_toEndOf="@id/fullPlayerBtnShuffle"
+        app:layout_constraintTop_toTopOf="@id/fullPlayerBtnPlay" />
+
+    <com.example.design_system.PlayIcon
+        android:id="@+id/fullPlayerBtnPlay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/play"
+        app:layout_constraintEnd_toStartOf="@id/fullPlayerBtnNext"
+        app:layout_constraintStart_toEndOf="@id/fullPlayerBtnPrevious"
+        app:layout_constraintTop_toBottomOf="@id/fullPlayerSeekBar"
+        app:tint="@color/textPrimary" />
+
+    <ImageView
+        android:id="@+id/fullPlayerBtnNext"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?actionBarItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/skip_next"
+        app:layout_constraintBottom_toBottomOf="@id/fullPlayerBtnPlay"
+        app:layout_constraintEnd_toStartOf="@id/fullPlayerBtnRepeat"
+        app:layout_constraintStart_toEndOf="@id/fullPlayerBtnPlay"
+        app:layout_constraintTop_toTopOf="@id/fullPlayerBtnPlay" />
+
+    <com.example.design_system.RepeatIcon
+        android:id="@+id/fullPlayerBtnRepeat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/repeat"
+        app:layout_constraintBottom_toBottomOf="@id/fullPlayerBtnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fullPlayerBtnNext"
+        app:layout_constraintTop_toTopOf="@id/fullPlayerBtnPlay"
+        app:tint="@color/textPrimary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

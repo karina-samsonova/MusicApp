@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/home_nav_graph">
+
+    <include app:graph="@navigation/home_navigation" />
+    <include app:graph="@navigation/search_navigation" />
+    <include app:graph="@navigation/favorites_navigation" />
+    <include app:graph="@navigation/album_navigation" />
+    <include app:graph="@navigation/artist_navigation" />
+    <include app:graph="@navigation/playlist_navigation" />
+    <include app:graph="@navigation/settings_navigation" />
+
+</navigation>

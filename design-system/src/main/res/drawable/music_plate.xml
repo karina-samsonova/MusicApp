@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="36"
+    android:viewportHeight="36">
+  <path
+      android:pathData="M18,18m-17.28,0a17.28,17.28 0,1 1,34.56 0a17.28,17.28 0,1 1,-34.56 0"
+      android:strokeWidth="1.44"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/musicPlateColor"/>
+  <path
+      android:pathData="M18,18m-7.92,0a7.92,7.92 0,1 1,15.84 0a7.92,7.92 0,1 1,-15.84 0"
+      android:strokeWidth="1.44"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/musicPlateColor"/>
+  <path
+      android:pathData="M18,18m-1.44,0a1.44,1.44 0,1 1,2.88 0a1.44,1.44 0,1 1,-2.88 0"
+      android:fillColor="@color/musicPlateColor"/>
+  <path
+      android:pathData="M3.6,17.638L3.616,17.303C3.969,10.01 9.702,4.128 16.974,3.6M32.4,18.362L32.384,18.698C32.031,25.99 26.298,31.872 19.026,32.4M6.003,16.575C6.63,11.134 10.86,6.776 16.266,5.943M30,19.424C29.373,24.866 25.143,29.223 19.737,30.056"
+      android:strokeWidth="1.08"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/musicPlateColor"
+      android:strokeLineCap="round"/>
+</vector>

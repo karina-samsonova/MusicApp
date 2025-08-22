@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingVertical="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewTrack"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/track_holder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewTrackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        tools:text="Аэропорты"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/textPrimary"
+        android:maxLines="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewArtistName"
+        app:layout_constraintStart_toEndOf="@id/imageViewTrack"/>
+
+    <TextView
+        android:id="@+id/textViewArtistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="12sp"
+        tools:text="Агутин Леонид"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/textViewTrackName"
+        app:layout_constraintBottom_toTopOf="@id/textViewDuration"
+        app:layout_constraintStart_toEndOf="@id/imageViewTrack"/>
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/textSecondary"
+        android:textSize="12sp"
+        tools:text="04:41"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/textViewArtistName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageViewTrack"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

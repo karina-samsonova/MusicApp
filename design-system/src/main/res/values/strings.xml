@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">MusicApp</string>
+    <string name="lang">en</string>
+    <string name="reload">Reload</string>
+    <string name="error_occurred">Error Occurred!</string>
+    <string name="fun">Fun</string>
+    <string name="sad">Sad</string>
+    <string name="love">Love</string>
+    <string name="calm">Calm</string>
+    <string name="rock">Rock</string>
+    <string name="jazz">Jazz</string>
+    <string name="pop">Pop</string>
+    <string name="electro">Electro</string>
+    <string name="no_content">No content</string>
+    <string name="file_download">File download</string>
+</resources>

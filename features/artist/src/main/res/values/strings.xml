@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">MusicApp</string>
+    <string name="lang">en</string>
+    <string name="reload">Reload</string>
+    <string name="error_occurred">Error Occurred!</string>
+    <string name="tracks">tracks</string>
+    <string name="albums">albums</string>
+</resources>

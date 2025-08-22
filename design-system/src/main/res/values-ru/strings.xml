@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang">ru</string>
+    <string name="reload">Перезагрузить</string>
+    <string name="error_occurred">Произошла ошибка!</string>
+    <string name="fun">Веселье</string>
+    <string name="sad">Грусть</string>
+    <string name="love">Любовь</string>
+    <string name="calm">Спокойствие</string>
+    <string name="rock">Рок</string>
+    <string name="jazz">Джаз</string>
+    <string name="pop">Поп</string>
+    <string name="electro">Электро</string>
+    <string name="no_content">По Вашему запросу ничего не найдено</string>
+    <string name="file_download">Загрузка файла</string>
+</resources>

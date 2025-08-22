@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bright_violet">#B75BE8</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="bottomNavBackground">#F4EDFF</color>
+    <color name="textPrimary">#000000</color>
+    <color name="textSecondary">#7B7B7B</color>
+    <color name="error">#FF187C</color>
+    <color name="bubbles">#99B75BE8</color>
+    <color name="musicPlateColor">#B75BE8</color>
+
+    <color name="favoritesBackground1">#DEC6FF</color>
+    <color name="favoritesBackground2">#FFE0EF</color>
+
+    <color name="miniPlayer1">#FCCFFF</color>
+    <color name="miniPlayer2">#EED2FF</color>
+    <color name="miniPlayer3">#D4CFFF</color>
+</resources>

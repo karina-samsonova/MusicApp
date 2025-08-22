@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang">ru</string>
+    <string name="reload">Перезагрузить</string>
+    <string name="error_occurred">Произошла ошибка!</string>
+    <string name="settings">Настройки</string>
+    <string name="theme">Тема</string>
+    <string name="light">Светлая</string>
+    <string name="dark">Темная</string>
+    <string name="system">Системная</string>
+    <string name="logout">Выйти из профиля</string>
+    <string name="logout_title">Выход из профиля</string>
+    <string name="logout_question">Вы уверены, что хотите выйти?</string>
+    <string name="close">Закрыть</string>
+    <string name="exit">Выйти</string>
+</resources>

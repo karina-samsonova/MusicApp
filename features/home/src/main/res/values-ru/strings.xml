@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="explore_genres">Исследуйте жанры</string>
+    <string name="according_to_the_mood">Под настроение</string>
+    <string name="new_tracks">Новинки</string>
+    <string name="week_popular">Популярное недели</string>
+</resources>

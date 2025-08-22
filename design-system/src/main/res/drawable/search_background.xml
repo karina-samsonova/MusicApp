@@ -1,0 +1,49 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="412dp"
+    android:height="732dp"
+    android:viewportWidth="412"
+    android:viewportHeight="732">
+  <group>
+    <clip-path
+        android:pathData="M0,0h412v732h-412z"/>
+    <path
+        android:pathData="M0,0h412v732h-412z"
+        android:fillColor="@color/background"/>
+    <path
+        android:strokeWidth="1"
+        android:pathData="M438.58,586.28L373.01,477.11C345.82,431.84 307.16,394.55 260.93,369.01L215.65,343.99C146.67,305.87 95.46,242.14 73.09,166.57L-0.42,-81.73"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/bubbles"/>
+    <path
+        android:strokeWidth="1"
+        android:pathData="M448.37,575.63L382.8,466.46C355.61,421.19 316.94,383.9 270.72,358.36L225.44,333.34C156.46,295.22 105.24,231.49 82.87,155.92L9.37,-92.37"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/bubbles"/>
+    <path
+        android:strokeWidth="1"
+        android:pathData="M504.5,750.5L415.82,506.16C396.34,452.5 361.97,405.51 316.72,370.71L288.19,348.77C225.77,300.76 184.73,230.13 173.93,152.13L141.5,-82"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/bubbles"/>
+    <path
+        android:strokeWidth="1"
+        android:pathData="M-61.64,504.65L-9.61,513.77C101.53,533.24 192.33,613.42 225.42,721.28L258.36,828.65"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/bubbles"/>
+    <path
+        android:strokeWidth="1"
+        android:pathData="M-73,517.39L-20.96,526.51C90.17,545.98 180.98,626.16 214.07,734.03L247,841.39"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/bubbles"/>
+    <path
+        android:strokeWidth="1"
+        android:pathData="M454.83,61.47V61.47C385.31,76.36 312.78,59.27 257.23,14.91L197.83,-32.53"
+        android:strokeAlpha="0.3"
+        android:fillColor="#00000000"
+        android:strokeColor="@color/bubbles"/>
+  </group>
+</vector>

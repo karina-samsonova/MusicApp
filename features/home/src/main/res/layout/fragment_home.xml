@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".presentation.ui.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.design_system.AnimatedBubbles
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:areWhite="true"
+            app:layout_constraintBottom_toTopOf="@id/mainContent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="?actionBarItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?actionBarItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/play_wave"
+            app:layout_constraintBottom_toTopOf="@id/textViewPopular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/textViewPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/week_popular"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/mainContent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPlay" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/rounded_bottomsheet"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewMood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/according_to_the_mood"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollViewMoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/textViewMood">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <com.example.design_system.MoodButton
+                        android:id="@+id/btnFun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:moodCode="fun" />
+
+                    <com.example.design_system.MoodButton
+                        android:id="@+id/btnSad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:moodCode="sad" />
+
+                    <com.example.design_system.MoodButton
+                        android:id="@+id/btnLove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:moodCode="love" />
+
+                    <com.example.design_system.MoodButton
+                        android:id="@+id/btnCalm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:moodCode="calm" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textViewNewTracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/new_tracks"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrollViewMoods" />
+
+            <com.example.design_system.ProgressPlate
+                android:id="@+id/progressBarSearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="@id/newTracks"
+                app:layout_constraintEnd_toEndOf="@id/newTracks"
+                app:layout_constraintStart_toStartOf="@id/newTracks"
+                app:layout_constraintTop_toTopOf="@id/newTracks" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newTracks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:minHeight="240dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/textViewNewTracks"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_track" />
+
+            <TextView
+                android:id="@+id/textViewGenres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/explore_genres"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/newTracks" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollViewGenres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="20dp"
+                android:scrollbars="none"
+                app:layout_constraintTop_toBottomOf="@id/textViewGenres">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp">
+
+                    <com.example.design_system.GenreButton
+                        android:id="@+id/btnRock"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:genreCode="rock" />
+
+                    <com.example.design_system.GenreButton
+                        android:id="@+id/btnJazz"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:genreCode="jazz" />
+
+                    <com.example.design_system.GenreButton
+                        android:id="@+id/btnPop"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:genreCode="pop" />
+
+                    <com.example.design_system.GenreButton
+                        android:id="@+id/btnElectro"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:genreCode="electro" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

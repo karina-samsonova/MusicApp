@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="396dp"
+    android:height="56dp"
+    android:viewportWidth="396"
+    android:viewportHeight="56">
+  <path
+      android:pathData="M14,0L382,0A14,14 0,0 1,396 14L396,42A14,14 0,0 1,382 56L14,56A14,14 0,0 1,0 42L0,14A14,14 0,0 1,14 0z"
+      android:fillAlpha="1">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="0"
+          android:startY="28"
+          android:endX="396"
+          android:endY="28"
+          android:type="linear">
+        <item android:offset="0" android:color="@color/miniPlayer1"/>
+        <item android:offset="0.5" android:color="@color/miniPlayer2"/>
+        <item android:offset="1" android:color="@color/miniPlayer3"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

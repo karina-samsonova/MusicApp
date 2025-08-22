@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang">ru</string>
+    <string name="reload">Перезагрузить</string>
+    <string name="error_occurred">Произошла ошибка!</string>
+    <string name="tracks">треки</string>
+    <string name="albums">альбомы</string>
+</resources>

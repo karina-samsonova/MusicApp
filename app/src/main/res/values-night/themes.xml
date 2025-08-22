@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MusicApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:editTextColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textSecondary</item>
+
+        <item name="android:windowSplashScreenBackground">#331D4E</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/rainbow_wave</item>
+
+        <item name="chipStyle">@style/MyChipStyle</item>
+        <item name="tabStyle">@style/MyTabStyle</item>
+    </style>
+
+    <style name="Theme.MusicApp" parent="Base.Theme.MusicApp" />
+
+    <style name="SeekBarColor"
+        parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="MyChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/color_choice_chip_background_color</item>
+        <item name="chipStrokeColor">@color/color_choice_chip_strokecolor_selector</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/color_choice_chip_text_color</item>
+    </style>
+
+    <style name="MyTabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/bright_violet</item>
+        <item name="tabSelectedTextColor">@color/bright_violet</item>
+        <item name="tabTextColor">@color/white</item>
+    </style>
+</resources>
