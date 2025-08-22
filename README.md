@@ -1,6 +1,6 @@
 # MusicApp
 
-<video width="400" controls style="border-radius: 8px; margin: 20px 0;">
+<video width="600" controls muted>
   <source src="https://github.com/user-attachments/assets/4b5d9d79-e1f4-4aa6-92ba-3898d1194310" type="video/mp4">
 </video>
 ![Видео](https://github.com/user-attachments/assets/4b5d9d79-e1f4-4aa6-92ba-3898d1194310)
