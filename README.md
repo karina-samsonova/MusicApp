@@ -1,9 +1,9 @@
 # MusicApp
 
 ## Видеодемонстрации (нажмите на картинку)
-[![Авторизация](https://github.com/user-attachments/assets/8b0b292a-58e3-409d-94cb-244b73b4c24a)](https://github.com/user-attachments/assets/4b5d9d79-e1f4-4aa6-92ba-3898d1194310)
-[![Главная](https://github.com/user-attachments/assets/3b9a9215-8e35-405b-9d23-80e33a85f325)](https://github.com/user-attachments/assets/f6e632de-f03f-4ac0-a01e-6bf40d78cc3b)
-[![Списки контента](https://github.com/user-attachments/assets/8b0b292a-58e3-409d-94cb-244b73b4c24a)](https://github.com/user-attachments/assets/b3eb830b-0601-41c7-9b71-afbc7ba99e69)
+[![Авторизация](https://github.com/user-attachments/assets/b70b5d4a-c8b9-4229-886a-df63fe8451cc)](https://github.com/user-attachments/assets/4b5d9d79-e1f4-4aa6-92ba-3898d1194310)
+[![Главная](https://github.com/user-attachments/assets/e1943579-1992-4327-afde-178acc64ad4c)](https://github.com/user-attachments/assets/f6e632de-f03f-4ac0-a01e-6bf40d78cc3b)
+[![Списки контента](https://github.com/user-attachments/assets/335cf399-c2e5-4d25-84e0-331ecf4f61a2)](https://github.com/user-attachments/assets/b3eb830b-0601-41c7-9b71-afbc7ba99e69)
 
 
 ## Technology stack
